@@ -32,6 +32,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: -0.25p;
+  overflow-x: hidden;
   background-color: #FAFAFA;
   color: var(--text-color);
 }
@@ -140,8 +141,8 @@ select:-webkit-autofill:focus {
 
 /* SITE HEADER */
 .site-header {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  position: relative;
+  z-index: 50;
 }
 
 .site-header__container {
@@ -167,8 +168,8 @@ select:-webkit-autofill:focus {
 .sitenav__link {
   display: block;
   position: relative;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   letter-spacing: -0.108px;
   color: var(--text-color);
   text-decoration: none;
@@ -191,6 +192,51 @@ select:-webkit-autofill:focus {
 
 .sitenav__link:hover {
   color: var(--black);
+}
+
+
+/* HERO */
+.hero {
+  z-index: 30;
+  position: relative;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-image: url("../img/hero-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 593px) -261px;
+
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 450px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: var(--black);
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  letter-spacing: -0.28;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.hero__img {
+  position: absolute;
+  width: 730px;
+  height: 900px;
+  left: calc(50% + 74px);
+  top: -112px;
 }
 
 
