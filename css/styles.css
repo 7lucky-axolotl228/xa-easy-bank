@@ -1,5 +1,8 @@
 :root {
-
+  --gradient-green: #33D35E, #2AB6D9;
+  --light-green: #30C88F;
+  --purple: #2D314D;
+  --text-color: #9597A5;
 }
 /* GLOBAL */
 html {
@@ -9,8 +12,7 @@ html {
 }
 
 *:focus {
-  outline: 2px dotted orchid;
-  outline-offset: 2px;
+  outline: none;
 }
 
 *,
@@ -25,11 +27,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Public Sans", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  line-height: 26px;
+  letter-spacing: -0.25p;
+  background-color: #FAFAFA;
+  color: var(--text-color);
 }
 
 img {
@@ -80,9 +83,9 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
