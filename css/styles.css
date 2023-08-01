@@ -144,6 +144,7 @@ select:-webkit-autofill:focus {
 .site-header {
   position: relative;
   z-index: 50;
+  background-color: #fafafa;
 }
 
 .site-header__container {
