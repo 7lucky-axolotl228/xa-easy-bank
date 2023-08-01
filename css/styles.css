@@ -336,6 +336,7 @@ select:-webkit-autofill:focus {
 }
 
 .articles__item {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -468,13 +469,17 @@ select:-webkit-autofill:focus {
 }
 
 .site-footer__info-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.site-footer__text {
+.site-footer__link {
   margin-top: 24px;
   margin-bottom: 0;
   font-size: 15px;
   font-weight: 400;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 
